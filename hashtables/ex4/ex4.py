@@ -2,9 +2,16 @@ def has_negatives(a):
     """
     YOUR CODE HERE
     """
-    # Your code here
+    results = []
+    numbers_seen = {}
 
-    return result
+    for num in a:
+        numbers_seen[number] = 1
+        if num != 0 and -num in numbers_seen:
+            results.append(abs(num))
+
+    return results
+# Your code here
 
 
 if __name__ == "__main__":
